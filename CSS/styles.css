@@ -1,0 +1,29 @@
+.carouselExampleSlidesOnly, .carousel-inner, .img{
+    height: 350px;
+}
+h1{
+    text-align: right;
+}
+.texto-encabezado{
+    text-align: right;
+}
+
+p{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+.card-deck{
+   margin-bottom: 30px;
+}
+footer{
+    background-color: blueviolet;
+}
+.nav-link{
+    color: #ffffff;
+}
+li:last-child {
+    color: green;
+}
+    
