@@ -69,12 +69,11 @@
 
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
+<hr class="my-4">
 <body>
   <div class="main-content">
     <div class="container mt-7">
       <!-- Table -->
-      <h2 class="mb-5">Perfil</h2>
       <div class="row">
         <div class="col-xl-8 m-auto order-xl-1">
           <div class="card bg-secondary shadow">
@@ -84,11 +83,11 @@
                   <h3 class="mb-0">Mi cuenta</h3>
                 </div>
                 <div class="col-4 text-right">
-                  <a href="#!" class="btn btn-sm btn-primary" style="background-color:#d47901">Configuracion</a>
+                  <a href="#!" class="btn btn-sm btn-primary" style="background-color:#d47901">Editar</a>
                 </div>
               </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="background-color: #f5d3a8;">
               <form>
                 <h6 class="heading-small text-muted mb-4">Info Usuario</h6>
                 <div class="pl-lg-4">
@@ -96,13 +95,13 @@
                     <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="input-apodo">Apodo</label>
-                        <input type="text" id="input-apodo" class="form-control form-control-alternative" placeholder="Apodo" value="Apodo">
+                        <input type="text" id="input-apodo" class="form-control form-control-alternative" placeholder="Apodo" value="Apodo" disabled>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">Email</label>
-                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="@ejemplo.com">
+                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="@ejemplo.com" value="micorreo@ejemplo.com" disabled>
                       </div>
                     </div>
                   </div>
@@ -110,13 +109,13 @@
                     <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="input-nombre">Nombre</label>
-                        <input type="text" id="input-nombre" class="form-control form-control-alternative" placeholder="Nombre" value="Nombre">
+                        <input type="text" id="input-nombre" class="form-control form-control-alternative" placeholder="Nombre" value="Nombre" disabled>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="input-apellido">Apellido</label>
-                        <input type="text" id="input-apellido" class="form-control form-control-alternative" placeholder="Apellido" value="Apellido">
+                        <input type="text" id="input-apellido" class="form-control form-control-alternative" placeholder="Apellido" value="Apellido" disabled>
                       </div>
                     </div>
                   </div>
@@ -128,8 +127,12 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group focused">
+                        <label class="form-control-label" for="input-telefono">Teléfono</label>
+                        <input id="input-telefono" class="form-control form-control-alternative" placeholder="Teléfono de contacto" value="0000000000" type="text" disabled>
+                      </div>
+                      <div class="form-group focused">
                         <label class="form-control-label" for="input-direccion">Direccion</label>
-                        <input id="input-address" class="form-control form-control-alternative" placeholder="Calle - Nro" value="-" type="text">
+                        <input id="input-direccion" class="form-control form-control-alternative" placeholder="Calle - Nro" value="-" type="text" disabled>
                       </div>
                     </div>
                   </div>
@@ -137,40 +140,37 @@
                     <div class="col-lg-4">
                         <div class="form-group focused">
                             <label class="form-control-label" for="input-piso">Piso</label>
-                            <input type="text" id="input-piso" class="form-control form-control-alternative" placeholder="Piso" value="-">
-                        </div>
+                            <input type="text" id="input-piso" class="form-control form-control-alternative" placeholder="Piso" value="-" disabled>
+                        </div>             
                         <div class="form-group focused">
-                            <label class="form-control-label" for="input-depto">Departamento</label>
-                            <input type="text" id="input-depto" class="form-control form-control-alternative" placeholder="depto" value="-">
-                        </div>
-                      <div class="form-group focused">
-                        <label class="form-control-label" for="input-city">City</label>
-                        <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="-">
-                      </div>
+                            <label class="form-control-label" for="input-pais">Pais</label>
+                            <input type="text" id="input-pais" class="form-control form-control-alternative" placeholder="Pais" value="Argentina" disabled>
+                          </div>                     
                     </div>
                     <div class="col-lg-4">
+                        <div class="form-group focused">
+                            <label class="form-control-label" for="input-depto">Departamento</label>
+                            <input type="text" id="input-depto" class="form-control form-control-alternative" placeholder="Departamento" value="-" disabled>
+                        </div>
                       <div class="form-group focused">
-                        <label class="form-control-label" for="input-country">Country</label>
-                        <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="United States">
+                        <label class="form-control-label" for="input-prov">Provincia</label>
+                        <input type="text" id="input-prov" class="form-control form-control-alternative" placeholder="Provincia" value="Buenos Aires" disabled>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-country">Postal code</label>
-                        <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
+                        <label class="form-control-label" for="input-cp">Código Postal</label>
+                        <input type="number" id="input-cp" class="form-control form-control-alternative" placeholder="0000" disabled>
                       </div>
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-ciudad">Ciudad</label>
+                        <input type="text" id="input-ciudad" class="form-control form-control-alternative" placeholder="Ciudad" value="Tigre" disabled> 
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
                 <hr class="my-4">
-                <!-- Description -->
-                <h6 class="heading-small text-muted mb-4">About me</h6>
-                <div class="pl-lg-4">
-                  <div class="form-group focused">
-                    <label>About Me</label>
-                    <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
-                  </div>
-                </div>
               </form>
             </div>
           </div>
@@ -178,11 +178,60 @@
       </div>
     </div>
   </div>
-  <footer class="footer">
-    <div class="row align-items-center justify-content-xl-between">
-      <div class="col-xl-6 m-auto text-center">
-
+  <hr class="my-4">
+  <footer>
+    <!-- FORMULARIO-->
+<div class="container"> 
+  <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+      <div class="col-3 offset-1"> 
+          <form class="form-inline my-2 my-lg-0">
+          <h5>Suscribete para recibir nuevas ofertas</h5>
+          <div class="mb-3">
+      
+      <input class="form-control mr-sm-2" class="form-control"  aria-describedby="email" placeholder="Ingresa tu mail">
+      
       </div>
-    </div>
-  </footer>
+      <button type="submit" class="btn btn-primary">SUSCRIBIRME</button>
+  </form>
+      </div>
+      <!--AYUDA COLUMNA 1-->
+  
+      <div class="col-3">
+      <ul class="nav flex-column">
+          <li class="nav-item">
+          <h5>Ayuda</h5>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Centro de Ayuda</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link ">Centro de Seguridad</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+          </li>
+      </ul>
+      </div>
+      <!-- COMPRAR COLUMNA 2-->
+      <div class="col-3">
+      <ul class="nav flex-column">
+          <li class="nav-item">
+          <h5>Comprar</h5>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Servicio Técnico</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Información Legal</a>
+          </li>
+      </ul>
+      </div>
+  </div>
+  
+   <!-- ALL RIGHTS RESERVED-->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p> © 2022 Copyright: All rights Reserved | Capital Federal | Argentina </p>  
+  </div>
+</nav>
+</footer>
 </body>
