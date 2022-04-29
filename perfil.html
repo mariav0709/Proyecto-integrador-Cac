@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--BOOTSTRAP-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">  
+
+<title>Linea Blanca</title>
+<link rel="shortcut icon" type="image/png" href="./CSS/IMAGENES/favicon.png">
+</head>
+<body>
+
+<header>
+  <!--ENCABEZADO-->
+    <nav class="navbar navbar-light pt-2 pb-2" style ="background: linear-gradient(to right, #ffffff,#c7b8fc);">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-5" href="#"><img src="./img/logo_texto.png"><!--Linea Blanca--></a>
+            <form class="d-flex col-8 mx-auto">
+                <div class="input-group">
+                  <input type="search" class="form-control " placeholder="Buscar Productos" aria-label="Buscar Productos">
+                  <button type="submit" class="input-group-text pt-0 pb-0" id="basic-addon1"><img src="./img/lupa.png"></button>
+                  
+                </div>
+            </form>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0" style="background: linear-gradient(to right, #e9a54b,#d47901);">
+        <div class="container-fluid">
+           
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto" >
+              <li class="nav-item" >
+                <a class="nav-link" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Productos&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Categorías
+                </a>
+                <ul class="dropdown-menu" style="background-color: #e9a54b" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Celulares</a></li>
+                  <li><a class="dropdown-item" href="#">Linea Frío</a></li>
+                  <li><a class="dropdown-item" href="#">Linea Calor</a></li>
+                  <li><a class="dropdown-item" href="#">Computación</a></li>
+                </ul>
+              </li>&nbsp;&nbsp;&nbsp;&nbsp;
+              <li class="nav-item ">
+                <a class="nav-link" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Compras&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Perfil&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item col-8">
+                <a class="nav-link" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/carrito.png">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</header>
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+<body>
+  <div class="main-content">
+    <div class="container mt-7">
+      <!-- Table -->
+      <h2 class="mb-5">Perfil</h2>
+      <div class="row">
+        <div class="col-xl-8 m-auto order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">Mi cuenta</h3>
+                </div>
+                <div class="col-4 text-right">
+                  <a href="#!" class="btn btn-sm btn-primary" style="background-color:#d47901">Configuracion</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+                <h6 class="heading-small text-muted mb-4">Info Usuario</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-apodo">Apodo</label>
+                        <input type="text" id="input-apodo" class="form-control form-control-alternative" placeholder="Apodo" value="Apodo">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Email</label>
+                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="@ejemplo.com">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-nombre">Nombre</label>
+                        <input type="text" id="input-nombre" class="form-control form-control-alternative" placeholder="Nombre" value="Nombre">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-apellido">Apellido</label>
+                        <input type="text" id="input-apellido" class="form-control form-control-alternative" placeholder="Apellido" value="Apellido">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Direccion -->
+                <h6 class="heading-small text-muted mb-4">Informacion de contacto</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-direccion">Direccion</label>
+                        <input id="input-address" class="form-control form-control-alternative" placeholder="Calle - Nro" value="-" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group focused">
+                            <label class="form-control-label" for="input-piso">Piso</label>
+                            <input type="text" id="input-piso" class="form-control form-control-alternative" placeholder="Piso" value="-">
+                        </div>
+                        <div class="form-group focused">
+                            <label class="form-control-label" for="input-depto">Departamento</label>
+                            <input type="text" id="input-depto" class="form-control form-control-alternative" placeholder="depto" value="-">
+                        </div>
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-city">City</label>
+                        <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="-">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-country">Country</label>
+                        <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="United States">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-country">Postal code</label>
+                        <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Description -->
+                <h6 class="heading-small text-muted mb-4">About me</h6>
+                <div class="pl-lg-4">
+                  <div class="form-group focused">
+                    <label>About Me</label>
+                    <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="row align-items-center justify-content-xl-between">
+      <div class="col-xl-6 m-auto text-center">
+
+      </div>
+    </div>
+  </footer>
+</body>
