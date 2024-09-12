@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
  <!--BOOTSTRAP-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"; href="./style.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">  
 
 <title>Linea Blanca</title>
 <link rel="shortcut icon" type="image/png" href="./CSS/IMAGENES/favicon.png">
+<link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
 
@@ -43,10 +46,10 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;Categorías
                 </a>
                 <ul class="dropdown-menu" style="background-color: #e9a54b; aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Celulares</a></li>
-                  <li><a class="dropdown-item" href="#">Linea Frío</a></li>
-                  <li><a class="dropdown-item" href="#">Linea Calor</a></li>
-                  <li><a class="dropdown-item" href="#">Computación</a></li>
+                  <li><a class="dropdown-item" href="#Heladera">Heladera</a></li>
+                  <li><a class="dropdown-item" href="#Lavarropas">Lavarropas</a></li>
+                  <li><a class="dropdown-item" href="#Cocina">Cocina</a></li>
+                  <li><a class="dropdown-item" href="#Smart TV">Smart TV</a></li>
                 </ul>
               </li>&nbsp;&nbsp;&nbsp;&nbsp;
               <li class="nav-item ">
@@ -103,10 +106,21 @@
 </div>
 </div>
 
+<!--CATEGORIAS-->
+
+<ul class="circulos">
+  <li><a href="#Heladera"><span>Heladera</span></a></li>
+  <li><a href="#Lavarropas"><span>Lavarropas</span></a></li>
+  <li><a href="#Cocina"><span>Cocina</span></a></li>
+  <li><a href="#Smart TV"><span>Smart TV</span></a></li>
+</ul>
+
+<!--CARDS DE PRODUCTOS-->
         <div class="card-group container col-sm">
                 
                 <div class="card">
-                        <img class="card-img-top" src="./img/Producto_1.JPG" alt="Card image cap">
+                  <a name="Heladera"></a>  
+                  <img class="card-img-top" src="./img/Producto_1.JPG" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Heladera Patrick 227lt</h5>
                     <p class="card-text">Cíclica Patrick HPK135M00B01</p>
@@ -148,6 +162,7 @@
         <div class="card-group container col-sm">
                 
             <div class="card">
+              <a name="Lavarropas"></a>
             <img class="card-img-top" src="./img/Producto_2.JPG" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Lavarropas Drean 6Kg</h5>
@@ -190,6 +205,7 @@
         <div class="card-group container col-sm">
                 
             <div class="card">
+              <a name="Cocina"></a>
             <img class="card-img-top" src="./img/Producto_3.JPG" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Cocina Escorial</h5>
@@ -232,6 +248,7 @@
         <div class="card-group container col-sm">
                 
             <div class="card">
+              <a name="Smart TV"></a>  
             <img class="card-img-top" src="./img/Producto_4.JPG" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Telefunken TV 32"</h5>
